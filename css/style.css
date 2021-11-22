@@ -518,7 +518,15 @@ section.why_seo_section .different {
     background: #F3602D;
     width: 17px;
     height: 17px;
-    margin-left: -26px;
+    /* margin-left: -25px; */
+}
+.fact_section_content_circle:nth-child(4) {
+    background:#149211;
+    margin-left: 25px;
+}
+.fact_section_content_circle:nth-child(6) {
+    background: #FFC700;
+    /* margin-left: 10px; */
 }
 
 /* Niestety chyba takiej jakości jest ten obraz w designu :( */
@@ -617,21 +625,11 @@ section.mail_box_section .mail_box_form input {
 }
 .plans_section_content .plans_block {
     background-color: #fff;
-    padding: 63px 100px 70px 100px;
+    padding: 63px 0px 70px 0px;
     text-align: center;
     margin-top: 86px;
     margin-left: -6px;
-    /* -moz-background-clip: border;
-    -webkit-background-clip: border;
-    background-clip: border-box;
-
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding;
-    background-clip: padding-box;
-
-    -moz-background-clip: content;
-    -webkit-background-clip: content;
-    background-clip: content-box; */
+    width: 32%;
 }
 .plans_section_content .plans_block .title {
     font-family: 'Gilroy-Medium', sans-serif;
@@ -643,6 +641,7 @@ section.mail_box_section .mail_box_form input {
     font-size: 18px;
     font-family: 'Gilroy-Medium', sans-serif;
     margin-top: 19px;
+    padding-left: 15px;
     /* line-height: 150%; */
 }
 .plans_section_content .plans_block .cost span {
@@ -660,7 +659,8 @@ section.mail_box_section .mail_box_form input {
     font-size: 17px;
     line-height: 250%;
     color: #666666;
-    margin-top: 2px;
+    margin-top: 3px;
+    border: 1px solid black;
 }
 .plans_section_content .plans_block .plans_button button {
     width: 200px;
@@ -797,6 +797,9 @@ footer p {
         padding: 0 0;
         flex-direction: column;
     }
+    .features_block:nth-child(2) {
+        margin-left: 0px;
+    }
     .features_block:nth-child(3) {
         margin-top: 24px;
     }
@@ -833,5 +836,26 @@ footer p {
     }
     .services_section_content {
         flex-direction: column;
+    }
+
+    .why_seo_block {
+        padding: 43px 0;
+    }
+    .why_seo_section_content {
+        padding: 0 25px;
+    }
+    .why_seo_section_content_right {
+        width: 100%;
+        padding: 0px 0px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .why_seo_section_content_right .title {
+        font-size: 24px;
+        text-align: center;
+    }
+    .why_seo_section_content_right .title h1 {
+        text-align: center;
+        margin: 0 auto;
     }
 }
