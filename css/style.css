@@ -869,6 +869,20 @@ footer p {
 
     .why_seo_block {
         padding: 10px 0;
+        background: linear-gradient(rgb(255 255 255 / 50%), rgb(255 255 255 / 50%)),
+        url(../img/why_seo.png) no-repeat;
+    }
+    .why_seo_examples_blocks {
+        padding: 44px 0px 0px 0px;
+        margin-top: -10px;
+    }
+    .why_seo_examples_blocks_elements {
+        flex-direction: column;
+    }
+    .why_seo_examples_blocks_elements .right {
+        padding-left: 0;
+        padding-top: 21px;
+        padding: 0px 49px 0px 49px;
     }
     .why_seo_section_content {
         padding: 0 25px;
@@ -882,6 +896,7 @@ footer p {
     .why_seo_section_content_right .title {
         font-size: 24px;
         text-align: center;
+        margin-top: 11px;
     }
     .why_seo_section_content_right .title h1 {
         text-align: center;
@@ -889,9 +904,10 @@ footer p {
     }
     .why_seo_section_content_right .top_descr {
         color: #000;
-        background: #fff;
+        /* background: #fff; */
         padding: 25px;
         border-radius: 10px;
-        box-shadow: 5px 10px 65px -32px #000;
+        box-shadow: 5px 10px 65px -48px #000;
+        margin-top: 13px;
     }
 }
