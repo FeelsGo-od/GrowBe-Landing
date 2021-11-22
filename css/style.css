@@ -770,16 +770,18 @@ footer p {
         padding: 50px 0;
         width: 75%;
         margin: 0 auto;
-        flex-direction: column;
+        width: 294px;
+        flex-wrap: wrap;
     }
     section.brand_section .brand_section_images img {
-        width: 53%;
+        width: 100px;
+        height: 34px;
         margin: 0 auto;
         margin-top: 13px;
     }
 
     .about_block {
-        padding: 32px 0;
+        padding: 32px 0px 7px 0px;
         /* padding-left: 15px; */
         text-align: center;
     }
@@ -797,11 +799,20 @@ footer p {
         padding: 0 0;
         flex-direction: column;
     }
+    .features_block {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-left: 0px;
+        padding-top: 20px;
+        border: 3px solid #fffcfc;
+        border-bottom: 0.1px solid #fbfbfb;
+        border-left: none;
+        border-right: none;
+        box-sizing: border-box;
+    }
     .features_block:nth-child(2) {
         margin-left: 0px;
-    }
-    .features_block:nth-child(3) {
-        margin-top: 24px;
     }
     .features_block:nth-child(3) img {
         padding-left: 0px;
@@ -811,6 +822,10 @@ footer p {
     .features_block:nth-child(3)>button {
         padding-left: 0px;
     }
+    section.features_section .features_section_content .different {
+        box-shadow: none;
+    }
+
     .services_descr {
         line-height: 131%;
         width: 83%;
@@ -819,27 +834,41 @@ footer p {
     .services_title {
         font-size: 32px;
         line-height: 44px;
+        padding-top: 38px;
     }
     .services_block .learn_button {
         margin-left: 0;
     }
     .services_block {
         width: 100%;
+        padding-bottom: 38px;
+        padding-top: 9px;
     }
     .services_block img {
-        width: 100%;
+        width: 200px;
         height: auto;
     }
     .services_block:nth-child(2)>img {
-        width: 78%;
+        width: 228px;
         margin: 0 auto;
     }
     .services_section_content {
         flex-direction: column;
+        padding-top: 38px;
+        padding-bottom: 0;
+    }
+    .services_section_content .different {
+        box-shadow: none;
+    }
+    .services_block .learn_button button {
+        width: 253px;
+    }
+    .services_block .learn_button button::after {
+        left: 181px;
     }
 
     .why_seo_block {
-        padding: 43px 0;
+        padding: 10px 0;
     }
     .why_seo_section_content {
         padding: 0 25px;
@@ -857,5 +886,12 @@ footer p {
     .why_seo_section_content_right .title h1 {
         text-align: center;
         margin: 0 auto;
+    }
+    .why_seo_section_content_right .top_descr {
+        color: #000;
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 5px 10px 65px -32px #000;
     }
 }
