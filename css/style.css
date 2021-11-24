@@ -331,6 +331,9 @@ section.services_section {
     font-size: 45px;
     line-height: 53px;
 }
+.services_title p {
+    padding-top: 100px;
+}
 .services_descr {
     padding-top: 23px;
     /* line-height: 24px; */
@@ -700,6 +703,14 @@ section.mail_box_section .mail_box_form input {
 }
 .plans_section_content .plans_block .cost span {
     font-size: 70px;
+    position: relative;
+}
+.plans_section_content .plans_block .cost span::before {
+    content: '$';
+    position: absolute;
+    left: -12px;
+    top: 3px;
+    font-size: 18px;
 }
 .plans_section_content .plans_block.different {
     padding-top: 93px;
@@ -736,6 +747,211 @@ section.mail_box_section .mail_box_form input {
     background:#F25822;
 }
 
+section.team_section {
+    background-color: #FAFAFA;
+}
+
+.team_title,
+.team_descr {
+    text-align: center;
+}
+
+.team_title {
+    padding-top: 93px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 45px;
+    line-height: 53px;
+}
+
+.team_title p {
+    padding-top: 100px;
+}
+
+.team_descr {
+    padding-top: 23px;
+    /* line-height: 24px; */
+    color: #666666;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.team_section_content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 100px;
+}
+
+.team_section_content .different {
+    box-shadow: 14px 30px 35px 0px #ebebeb;
+    z-index: 1;
+}
+
+.team_section_content .different .title {
+    letter-spacing: 1px;
+}
+
+.team_block {
+    width: 270px;
+    text-align: center;
+    background: #fff;
+    padding-bottom: 50px;
+    padding-top: 46px;
+}
+
+.team_block img {
+    width: 130px;
+    height: 130px;
+}
+
+.team_block .title {
+    padding-top: 10px;
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.team_block .descr {
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: #666666;
+    font-size: 13px;
+    line-height: 150%;
+}
+
+.team_block .team_links {
+    padding-top: 17px;
+    display: flex;
+    margin: 0 auto;
+    width: 36%;
+    justify-content: space-between;
+    align-items: center;
+}
+.team_block .team_links img {
+    width: 11px;
+    height: 10px;
+}
+.team_block .team_links img:nth-child(1) {
+    width: 20px;
+    height: auto;
+}
+
+section.reviews_section {
+    background-color: #FAFAFA;
+}
+
+.reviews_title,
+.reviews_descr {
+    text-align: center;
+}
+
+.reviews_title {
+    padding-top: 93px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 45px;
+    line-height: 53px;
+}
+
+/* .reviews_title p {
+    padding-top: 100px;
+} */
+
+.reviews_descr {
+    padding-top: 23px;
+    /* line-height: 24px; */
+    color: #666666;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.reviews_section_content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 100px;
+}
+
+.reviews_section_content .different {
+    box-shadow: 14px 30px 35px 0px #ebebeb;
+    z-index: 1;
+}
+
+.reviews_section_content .different .title {
+    letter-spacing: 1px;
+}
+
+.reviews_block {
+    width: 370px;
+    text-align: center;
+    background: #fff;
+    padding-bottom: 50px;
+}
+.reviews_block .text {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.reviews_block img {
+    width: 63px;
+}
+
+.reviews_block .title {
+    padding-top: 22px;
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    font-size: 13px;
+    line-height: 150%;
+    color: #000;
+}
+
+.reviews_block .descr {
+    padding-top: 23px;
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: #888888;
+    font-size: 13px;
+    line-height: 150%;
+}
+
+.reviews_block .learn_button {
+    padding-top: 34px;
+    margin-left: -20px;
+}
+
+.reviews_block .learn_button button {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background: #F25822;
+    color: #fff;
+    font-family: 'Gilroy-Bold';
+    font-size: 13px;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 0px;
+    position: relative;
+
+    line-height: 150%;
+}
+
+.reviews_block .learn_button button::after {
+    content: '';
+    background: url('../img/btn-arrow.png') no-repeat;
+    display: block;
+    position: absolute;
+    /* border: 10px solid #000; */
+    top: 19px;
+    left: 120px;
+    width: 10%;
+    height: 12px;
+}
+
+.reviews_block .learn_button button span {
+    margin-left: 7px;
+    font-size: 14px;
+    font-weight: lighter;
+}
 
 
 
