@@ -570,6 +570,9 @@ section.why_seo_section .different {
     line-height: 150%;
     margin: 0 auto;
 }
+.fact_section_content_block .title.different {
+    margin-left: 16px;
+}
 .fact_section_content_block .descr {
     font-family: 'Gilroy-SemiBold', sans-serif;
     font-size: 18px;
@@ -908,6 +911,7 @@ section.reviews_section {
     /* background: #fff; */
     padding: 1px 4px 26px 21px;
     margin-left: -7px;
+    height: 300px;
 }
 .reviews_block_content {
     border: 2px solid #EEEEEE;
@@ -929,6 +933,18 @@ section.reviews_section {
     color: #888888;
     padding-bottom: 26px;
     margin-top: 5px;
+    position: relative;
+    z-index: 99;
+}
+.reviews_block .text::after {
+    content: '';
+    background: url('../img/quote.png') no-repeat;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -5px;
+    left: 261px;
+    z-index: -1;
 }
 
 .reviews_block img {
@@ -996,6 +1012,8 @@ section.reviews_section {
 
 .slick-list {
     overflow: hidden;
+    position: relative;
+    z-index: 0;
 }
 .slick-track {
     display: flex;
@@ -1006,8 +1024,10 @@ section.reviews_section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -3px;
+    margin-top: -33px;
     margin-left: -10px;
+    position: relative;
+    z-index: 99;
 }
 .slider .slick-dots li {
     list-style: none;
@@ -1038,17 +1058,245 @@ section.reviews_section {
 .blog_section {
     padding-top: 90px;
 }
+.blog_title,
+.blog_descr {
+    text-align: center;
+}
+
+.blog_title {
+    padding-bottom: 19px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 45px;
+    line-height: 53px;
+}
+
+/* .reviews_title p {
+    padding-top: 100px;
+} */
+
+.blog_descr {
+    /* padding-top: 23px; */
+    /* line-height: 24px; */
+    color: #666666;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    padding-bottom: 55px;
+}
+
+.blog_section_content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 100px;
+    min-width: 0;
+}
+
+.blog_section_content .different {
+    box-shadow: 14px 30px 35px 0px #ebebeb;
+    z-index: 1;
+}
+
+.blog_section_content .different .title {
+    letter-spacing: 1px;
+}
+
+.blog_block {
+    /* width: 570px; */
+    text-align: center;
+    /* background: #fff; */
+    padding: 1px 4px 26px 21px;
+    margin-left: -7px;
+    height: 300px;
+}
+
+.blog_block_content {
+    border: 2px solid #EEEEEE;
+    width: 99%;
+    min-height: 247px;
+    margin-left: 423px;
+    display: flex;
+}
+.blog_block_content .image {
+    background: url('../img/image.png');
+    width: 370px;
+    height: 330px;
+}
+.blog_block_content .content .meta {
+    display: flex;
+}
+.blog_block_content .content .meta img {
+    width: 14px;
+    height: 14px;
+}
+.blog_block_content .content .meta span {
+    color: #888888;
+    font-size: 11px;
+    line-height: 150%;
+}
+.blog_block_content .content .title {
+    padding-top: 6px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 24px;
+    line-height: 150%;
+    color: #000;
+    opacity: 0.1;
+}
+.blog_block_content .content .text {
+    font-size: 15px;
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: #666666;
+}
+.blog_block_content .content .button {
+    color: #F25822;
+    font-family: 'Gilroy-Bold';
+    font-size: 11px;
+}
+
+.blog_block_content.different {
+    width: 98%;
+    border: none;
+    box-shadow: 15px 25px 60px -10px rgb(0 0 0 / 10%);
+}
+
+.blog_block .text {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    opacity: 0.1;
+    color: #888888;
+    padding-bottom: 26px;
+    margin-top: 5px;
+    position: relative;
+    z-index: 99;
+}
+
+.blog_block .text::after {
+    content: '';
+    background: url('../img/quote.png') no-repeat;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -5px;
+    left: 261px;
+    z-index: -1;
+}
+
+.blog_block img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.blog_block .descr {
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: #888888;
+    font-size: 13px;
+    line-height: 150%;
+    opacity: 0.1;
+}
+
+.blog_block .learn_button {
+    padding-top: 34px;
+    margin-left: -20px;
+}
+
+.blog_block .learn_button button {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background: #F25822;
+    color: #fff;
+    font-family: 'Gilroy-Bold';
+    font-size: 13px;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 0px;
+    position: relative;
+
+    line-height: 150%;
+}
+
+.blog_block .learn_button button::after {
+    content: '';
+    background: url('../img/btn-arrow.png') no-repeat;
+    display: block;
+    position: absolute;
+    /* border: 10px solid #000; */
+    top: 19px;
+    left: 120px;
+    width: 10%;
+    height: 12px;
+}
+
+.blog_block .learn_button button span {
+    margin-left: 7px;
+    font-size: 14px;
+    font-weight: lighter;
+}
 
 
+.slick-list {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
 
-/* footer {
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+    margin-left: -296px;
+}
+
+.slider-two .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -33px;
+    margin-left: -10px;
+    position: relative;
+    z-index: 99;
+}
+
+.slider-two .slick-dots li {
+    list-style: none;
+}
+
+.slider-two .slick-dots button {
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    background: #DDDDDD;
+    border-radius: 50%;
+    border: none;
+    margin-left: 10px;
+}
+
+.slider-two .slick-active .text,
+.slider-two .slick-active .title,
+.slider-two .slick-active .descr {
+    opacity: 2;
+}
+
+.slider-two .slick-dots .slick-active button {
+    background: #F25822;
+    width: 12px;
+    height: 12px;
+}
+
+.slider-two .slick-dots .slick-active {
+    background: none;
+}
+
+
+footer {
     background: #000;
     padding: 20px 0;
     text-align: center;
 }
 footer p {
     color: #f8f9f7;
-} */
+}
 
 /* media 768px - 991px */
 @media (min-width: 768px) and (max-width: 991px) {
