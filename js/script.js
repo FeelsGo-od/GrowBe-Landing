@@ -5,7 +5,7 @@ $(document).ready(function () {
         adaptiveHeight: true,
         infinite: true,
         slidesToShow: 2,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 6000,
         pauseOnFocus: true,
         pauseOnHover: true,
@@ -26,8 +26,29 @@ $(document).ready(function () {
         pauseOnFocus: true,
         pauseOnHover: true,
         pauseOnDotsHover: true,
-        centerMode: false,
-        variableWidth: true,
+        centerMode: true,
+        // variableWidth: true,
         slidesToScroll: 1,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 });
