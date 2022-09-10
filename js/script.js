@@ -1,4 +1,14 @@
 $(document).ready(function () {
+    // MENU HAMBURGER
+    let hambMenu = document.querySelector('.hamburg_menu img');
+    let mobMenu = document.querySelector('.mob_menu');
+    hambMenu.addEventListener('click', function () {
+        hambMenu.classList.toggle('rotate-menu');
+        mobMenu.classList.toggle('db');
+    });
+
+
+    // SLIDER SLICK
     $('.slider').slick({
         arrows: false,
         dots: true,
