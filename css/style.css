@@ -88,6 +88,7 @@ header .menu ul {
 header .menu ul li {
   float: left;
   list-style: none;
+  cursor: pointer !important;
 }
 header .menu ul li .active {
   color: #f25822;
@@ -95,16 +96,66 @@ header .menu ul li .active {
 header .menu ul li a {
   padding: 5px 16px;
   font-size: 14px;
-  /* font-weight: 700; */
   text-decoration: none;
   color: black;
   font-weight: normal;
   font-family: "Gilroy-ExtraBold", sans-serif;
   letter-spacing: 0.4px;
+  margin-top: 8px;
 }
 header .menu ul li a:hover {
-  color: slategray;
+  color: black;
 }
+
+header .dropbtn {
+  background: none;
+  padding: 0 16px;
+  font-size: 14px;
+  border: none;
+}
+
+header .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+header .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fefefe;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.051);
+  z-index: 1;
+}
+
+header .dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  transition: padding 0.2s ease-out, border 0.4s ease, background-color 0.2s ease-in-out;
+  text-align: center;
+  padding: 22px 42px !important;
+  font-size: 13.6px !important;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: "Gilroy-SemiBold", sans-serif;
+  border: 1px solid transparent;
+}
+
+header .dropdown-content a:hover {
+  background-color: rgb(172 172 172 / 5%);
+  border: 1px solid rgb(255 255 255);
+  color: #000000 !important;
+  border-radius: 0;
+}
+
+header .dropdown:hover .dropdown-content {display: block;}
+
+header .dropdown:hover .dropbtn {
+  color: #070707;
+  transition: color 0.3s ease-out;
+}
+
 header .menu .links span {
   position: relative;
 }
@@ -116,7 +167,7 @@ header .menu .links span img {
 header .menu .button {
   margin-top: -22px;
 }
-header .menu button {
+header .menu .main-btn {
   width: 120px;
   border-radius: 30px;
   min-height: 40px;
@@ -161,6 +212,17 @@ header .menu button {
 .mob_menu.db li {
   margin-top: 10px;
   z-index: 99;
+}
+.mob_menu.db {
+  background: #fdfdfd;
+}
+.mob_menu.db li {
+  margin-top: 30px;
+}
+.mob_menu li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 section.main_section {
@@ -234,6 +296,7 @@ section.main_section .main_section_bg {
   position: absolute;
   right: auto;
   top: -95px;
+  z-index: -1;
 }
 
 section.brand_section .brand_section_images {
@@ -405,6 +468,8 @@ section.services_section {
   text-align: center;
   background: #fff;
   padding-bottom: 50px;
+  color: #000;
+  text-decoration: none;
 }
 .services_block img {
   width: 370px;
@@ -1304,9 +1369,6 @@ footer .bottom .rights p {
   section.brand_section .brand_section_images img {
     height: 50px;
   }
-  .about_block .bg {
-    /* left: -200px; */
-  }
 }
 @media (max-width: 1200px) {
   .why_seo_section_content_right {
@@ -1314,6 +1376,15 @@ footer .bottom .rights p {
   }
   .why_seo_block {
     background-position: 43% 144px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .why_seo_examples_blocks_elements {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background: #fff;
+    border-radius: 15px;
   }
 }
 
@@ -1551,6 +1622,9 @@ footer .bottom .rights p {
   footer .top .second {
     margin-left: 45px;
   }
+  .about_block .bg {
+    left: -264px !important;
+  }
 }
 
 /* media 0px - 767px */
@@ -1564,14 +1638,17 @@ footer .bottom .rights p {
   .container {
     width: 100%;
   }
-  /* .header {
-        justify-content: space-around;
-    } */
   .header .menu {
     display: none;
   }
-  .mob_menu {
-    /* display: block; */
+  .about_block .bg {
+    display: none;
+  }
+  .about_section_content  .title h1 {
+    line-height: 37px;
+    width: 88%;
+    margin: 0 auto;
+    margin-bottom: 18px;
   }
   .hamburg_menu {
     display: flex;
@@ -1596,6 +1673,12 @@ footer .bottom .rights p {
   section.main_section .main_section_content .descr {
     margin-top: 33px;
     font-size: 21px;
+    margin-top: 33px;
+    font-size: 16px;
+    padding: 1px 55px;
+  }
+  .main_section_content .title h1 {
+    margin-top: 21px
   }
   section.main_section .main_section_content .title .different {
     letter-spacing: -0.5px;
@@ -1614,7 +1697,6 @@ footer .bottom .rights p {
   section.main_section .main_section_content .buttons .watch_button {
     padding-left: 18px;
     justify-content: center;
-    /* padding-top: 10px; */
   }
   section.main_section .main_section_content .buttons .watch_button button {
     margin-left: 6px;
@@ -1638,16 +1720,20 @@ footer .bottom .rights p {
   }
 
   .about_block {
-    padding: 32px 0px 7px 0px;
-    /* padding-left: 15px; */
+    padding: 53px 0px 54px 0px;
     text-align: center;
+  }
+  .about_block_mobile img {
+    display: none;
   }
   section.about_section .title {
     font-size: 27px;
   }
   section.about_section .descr {
-    width: 91%;
+    width: 79%;
     margin: 0 auto;
+    text-align: left;
+    font-size: 16px;
   }
   .about_block_mobile {
     display: block;
@@ -1661,7 +1747,7 @@ footer .bottom .rights p {
     margin: 0 auto;
     text-align: center;
     padding-left: 0px;
-    padding-top: 20px;
+    padding-top: 45px;
     border: 3px solid #fffcfc;
     border-bottom: 0.1px solid #fbfbfb;
     border-left: none;
@@ -1681,6 +1767,14 @@ footer .bottom .rights p {
   }
   section.features_section .features_section_content .different {
     box-shadow: none;
+  }
+  .features_section_content img {
+    width: 30px;
+    transform: scale(1.5);
+  }
+  .features_block .descr {
+    width: 80%;
+    margin: 0 auto;
   }
 
   .services_descr {
@@ -1723,6 +1817,10 @@ footer .bottom .rights p {
   .services_block .learn_button button::after {
     left: 181px;
   }
+  .services_section .services_title {
+    line-height: 35px;
+    padding: 38px 7px 0px;
+  }
 
   .why_seo_block {
     padding: 10px 0;
@@ -1731,7 +1829,7 @@ footer .bottom .rights p {
     background-position: 195px 20px;
   }
   .why_seo_examples_blocks {
-    padding: 44px 0px 0px 0px;
+    padding: 14px 0px 0px 0px;
     margin-top: -10px;
   }
   .why_seo_examples_blocks_elements {
@@ -1739,14 +1837,18 @@ footer .bottom .rights p {
     padding-left: 0px;
     padding-top: 28px;
   }
+  .why_seo_examples_blocks_elements img {
+    width: 30px;
+    transform: scale(1.82);
+  }
   .why_seo_examples_blocks_elements .right {
     padding-left: 0;
     padding-top: 21px;
     padding: 10px;
   }
   .why_seo_examples_blocks_elements .right .descr {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: 17px;
     margin-top: 8px;
   }
   .why_seo_section_content {
@@ -1759,7 +1861,7 @@ footer .bottom .rights p {
     text-align: center;
   }
   .why_seo_section_content_right .title {
-    font-size: 31px;
+    font-size: 21px;
     text-align: center;
     margin-top: 10px;
   }
@@ -1770,20 +1872,16 @@ footer .bottom .rights p {
   }
   .why_seo_section_content_right .top_descr {
     color: #000;
-    /* background: #fff; */
-    /* padding: 25px; */
     border-radius: 10px;
-    /* box-shadow: 5px 10px 65px -48px #000; */
     margin-top: 13px;
-    line-height: 23px;
-    padding-bottom: 51px;
-    width: 80%;
+    line-height: 21px;
+    padding-bottom: 61px;
+    width: 88%;
     margin: 0 auto;
-    padding-top: 32px;
+    text-align: left;
+    padding-top: 23px;
+    letter-spacing: 0.3px;
   }
-  /* .plans_section_content .plans_block .plans_button button {
-        margin-top: 10px;
-    } */
   .fact_section {
     padding-top: 57px;
   }
@@ -1851,9 +1949,6 @@ footer .bottom .rights p {
   .plans_section_content .plans_block .descr {
     font-size: 10px;
   }
-  .plans_section_content .plans_block.different {
-
-  }
   .plans_section_content .plans_block .cost {
     font-size: 9px;
   }
@@ -1892,14 +1987,29 @@ footer .bottom .rights p {
   }
   footer .logo_link {
     justify-content: center;
+    position: relative;
+    left: -8px;
   }
   footer .logo a img {
-    width: 35px;
+    width: 18px;
+    transform: scale(1.2);
   }
   footer .top .footer__block .social_icons {
-    width: 50%;
+    width: 28%;
     margin: 0 auto;
     padding-bottom: 29px;
+  }  
+  footer .top .footer__block .social_icons img {
+    width: 11px;
+    transform: scale(1.1);
+  }
+  footer .top .footer__block .social_icons img:nth-child(1) {
+    width: 18px;
+  }
+  footer .top .first p {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 23px;
   }
   footer .top .second,
   footer .top .third,
@@ -1923,7 +2033,6 @@ footer .bottom .rights p {
   .blog_title, .blog_descr {
     text-align: center;
     position: relative;
-    /* left: 18px; */
   }
   .blog_block_content {
     margin-left: 300px;
@@ -1964,6 +2073,51 @@ footer .bottom .rights p {
     text-align: center;
     padding-bottom: 15px;
   }
+  .team_block .team_links img:nth-child(1) {
+    width: 5px;
+    transform: scale(2.9);
+  }
+  .team_block .team_links {
+    width: 23%;
+  }
+  .team_block .team_links img {
+    width: 8px;
+    height: auto;
+    transform: scale(1.1);
+  }
+  .blog_section {
+    margin-top: 2px;
+  }
+  .meta-block img {
+    width: 1px;
+    transform: scale(9.5);
+    position: relative;
+    left: -6px;
+  }
+  .blog_block .text {
+    font-size: 12px;
+    width: 32%;
+  }
+  .blog_block_content .content {
+    margin-left: 6px;
+  }
+  .mob_menu.db {
+    background: #fdfdfd;
+  }
+  .mob_menu.db li {
+    margin-top: 30px;
+  }
+  .mob_menu li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  footer .top .second ul {
+    list-style: none;
+  }
+  footer .top .third li {
+    list-style: none;
+  }
 }
 @media (min-width: 476px) and (max-width: 586px) {
   .blog_block .text {
@@ -1971,7 +2125,10 @@ footer .bottom .rights p {
   }
 }
 
-@media (min-width: 320px) and (max-width: 475px) {
+@media (min-width: 280px) and (max-width: 475px) {
+  section.main_section .main_section_content .descr {
+    padding: 1px 35px;
+  }
   .plans_section_content {
     flex-direction: column;
   }
@@ -1981,27 +2138,31 @@ footer .bottom .rights p {
   .plans_section_content .plans_block .title {
     font-size: 28px;
   }
+  .fact_section .container {
+    border: 2px solid #f6f6f6;
+  }
   .fact_section_content_block .title {
-    font-size: 36px;
+    font-size: 35px;
   }
   .fact_section_content_block .descr {
     margin: -11px auto 0px auto;
+    font-size: 15px;
   }
   .why_seo_section_content_right .title {
-    line-height: 36px;
+    line-height: 30px;
   }
   .why_seo_section_content_right {
     width: 64%;
   }
   section.main_section .title {
-    font-size: 31px;
+    font-size: 32px;
     line-height: 53px;
   }
   .why_seo_section_content_right .top_descr {
     font-size: 12px;
   }
   .why_seo_examples_blocks_elements .right .descr {
-    font-size: 17px;
+    font-size: 12px;
   }
   .why_seo_section_content_right {
     width: 81%;
@@ -2017,6 +2178,8 @@ footer .bottom .rights p {
   .blog_title {
     text-align: center;
     padding-top: 0px;
+    width: 90%;
+    margin: 0 auto;
   }
   .blog_descr {
       width: 84%;
@@ -2026,5 +2189,82 @@ footer .bottom .rights p {
   }
   .blog_block .text {
     width: 37%;
+  }
+  .main_section_content .title h1 {
+    padding: 0 7px;
+  }
+  section.main_section .main_section_content .buttons {
+    flex-direction: column;
+  }
+  section.main_section .main_section_content .buttons .watch_button {
+    margin-top: 27px;
+    padding-top: 0;
+    padding-left: 0;
+  }
+  section.brand_section .brand_section_images {
+    width: 240px;
+    padding: 20px 0 50px 0;
+  }
+  section.brand_section .brand_section_images img {
+    height: auto;
+  }
+  section.brand_section .brand_section_images img:first-child {
+    width: 72px;
+    height: 27px;
+  }
+  section.main_section .main_section_content .buttons .watch_button img {
+    width: 12%;
+    transform: scale(1.33);
+  }
+  .main_section_content .bg {
+    opacity: 0.2;
+  }
+  header .logo a img {
+    width: 3.6%;
+    transform: scale(1.73);
+  }
+  .mail_box_section_content .title h1 {
+    padding-top: 0;
+  }
+  .plans_section_content .plans_block .descr {
+    font-size: 15px;
+    line-height: 217%;
+  }
+  .plans_section_content .plans_block.different {
+    margin-top: 7px;
+  }
+  .plans_section_content .plans_block:nth-child(3) {
+    margin-top: 7px;
+  }
+  .plans_section {
+    padding-bottom: 2px;
+  }
+  .team_descr {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .team_title {
+    padding-top: 25px;
+  }
+  .blog_block_content .content .title {
+    font-size: 13px;
+    width: 26%;
+    line-height: 14px;
+    margin-bottom: 24px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .blog_block .text {
+    font-size: 12px;
+    width: 32%;
+  }
+  .blog_block_content .content {
+    margin-left: 1px;
+  }
+  .slider-two .slick-dots {
+    padding-bottom: 82px;
+  }
+  .fact_section {
+    padding-top: 27px;
   }
 }

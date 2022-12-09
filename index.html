@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <title>Web Developing</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <section class="wrapper">
         <div class="first_block">
@@ -35,8 +37,15 @@
                                     <a href="">Services</a>
                                 </li>
                                 <li>
-                                    <a href="">Features</a>
-                                    <span><img src="img/arrow_down.png" alt=""></span>
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Features</button>
+                                        <span><img src="img/arrow_down.png" alt=""></span>
+                                        <div class="dropdown-content">
+                                            <a href="#">Some Link 1</a>
+                                            <a href="#">Random link 2</a>
+                                            <a href="#">Category nr. 3</a>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li>
                                     <a href="">Team</a>
@@ -49,7 +58,7 @@
                                 </li>
                             </ul>
                             <div class="button">
-                                <button>Get Started</button>
+                                <button class="main-btn">Get Started</button>
                             </div>
                         </div>
                     </div>
@@ -92,7 +101,8 @@
                                 Website.</h1>
                         </div>
                         <div class="descr">
-                            Provide all kind of seo services and help to improve <br> seo ranking. Globally incubate standards.
+                            Provide all kind of seo services and help to improve <br> seo ranking. Globally incubate
+                            standards.
                         </div>
                         <div class="buttons">
                             <div class="start_button"><button>Start Now</button></div>
@@ -122,24 +132,27 @@
         <div class="about_block">
             <div class="block">
                 <img class="bg" src="img/about_bg.png" alt="">
-            <section class="about_section">
-                <div class="container">
-                    <div class="about_section_content">
-                        <div class="title">
-                            <h1><span class="different"><span class="different">Perfect Solution For</span> <br> Your Business</h1>
+                <section class="about_section">
+                    <div class="container">
+                        <div class="about_section_content">
+                            <div class="title">
+                                <h1><span class="different"><span class="different">Perfect Solution For</span> <br>
+                                        Your Business</h1>
+                            </div>
+                            <div class="descr">
+                                Distinctively exploit optimal alignments for intuitive bandwidth. Quickly <br>
+                                coordinate e-business applications through revolutionary catalysts for <br> chang the
+                                Seamlessly underwhelm optimal testing procedures.
+                            </div>
+                            <div class="learn_button"><button>Learn More</button></div>
                         </div>
-                        <div class="descr">
-                            Distinctively exploit optimal alignments for intuitive bandwidth. Quickly <br> coordinate e-business applications through revolutionary catalysts for <br> chang the Seamlessly underwhelm optimal testing procedures.
-                        </div>
-                        <div class="learn_button"><button>Learn More</button></div>
                     </div>
+                </section>
+                <!-- .....* About Mobile *..... -->
+                <div class="about_block_mobile">
+                    <img src="img/macbook.png" alt="">
                 </div>
-            </section>
-            <!-- .....* About Mobile *..... -->
-            <div class="about_block_mobile">
-                <img src="img/macbook.png" alt="">
-            </div>
-            <!-- .....* About Mobile *..... -->
+                <!-- .....* About Mobile *..... -->
             </div>
         </div>
 
@@ -149,19 +162,22 @@
                     <div class="features_block">
                         <img src="img/features1.png" alt="">
                         <h2 class="title">Grow Your Business</h2>
-                        <p class="descr">Leverage agile frameworks to provide a <br> robust synopsis for high level overviews.</p>
+                        <p class="descr">Leverage agile frameworks to provide a <br> robust synopsis for high level
+                            overviews.</p>
                         <button class="more_button">Read More...</button>
                     </div>
                     <div class="features_block different">
                         <img src="img/features2.png" alt="">
                         <h2 class="title">Get Quality Ieads</h2>
-                        <p class="descr">Leverage agile frameworks to provide a <br> robust synopsis for high level overviews.</p>
+                        <p class="descr">Leverage agile frameworks to provide a <br> robust synopsis for high level
+                            overviews.</p>
                         <button class="more_button">Read More...</button>
                     </div>
                     <div class="features_block">
                         <img src="img/features3.png" alt="">
                         <h2 class="title">Drive More Sales</h2>
-                        <p class="descr">Leverage agile frameworks to provide a <br> robust synopsis for high level overviews.</p>
+                        <p class="descr">Leverage agile frameworks to provide a <br> robust synopsis for high level
+                            overviews.</p>
                         <button class="more_button">Read More...</button>
                     </div>
                 </div>
@@ -171,33 +187,37 @@
 
         <section class="services_section">
             <div class="services_title">Why You Should Choose Us.</div>
-            <div class="services_descr">Distinctively exploit optimal alignments for intuitive bandwidth. Quickly coordinate e-business <br> applications through revolutionary catalysts.</div>
+            <div class="services_descr">Distinctively exploit optimal alignments for intuitive bandwidth. Quickly
+                coordinate e-business <br> applications through revolutionary catalysts.</div>
             <div class="container">
                 <div class="services_section_content">
-                    <div class="services_block">
+                    <a href="service.html" class="services_block">
                         <img src="img/services1.png" alt="">
                         <div class="title">Keyword Research</div>
-                        <div class="descr">Business applications through revolutionary <br> catalysts for chang the Seamlessly <br> underwhelm dures.</div>
+                        <div class="descr">Business applications through revolutionary <br> catalysts for chang the
+                            Seamlessly <br> underwhelm dures.</div>
                         <div class="learn_button">
                             <button>Learn More</button>
                         </div>
-                    </div>
-                    <div class="services_block different">
+                    </a>
+                    <a href="service.html" class="services_block different">
                         <img src="img/services2.png" alt="">
                         <div class="title">Seo Optimization</div>
-                        <div class="descr">Business applications through revolutionary <br> catalysts for chang the Seamlessly <br> underwhelm dures.</div>
+                        <div class="descr">Business applications through revolutionary <br> catalysts for chang the
+                            Seamlessly <br> underwhelm dures.</div>
                         <div class="learn_button">
                             <button>Learn More</button>
                         </div>
-                    </div>
-                    <div class="services_block">
+                    </a>
+                    <a href="service.html" class="services_block">
                         <img src="img/services3.png" alt="">
                         <div class="title">Social Marketing</div>
-                        <div class="descr">Business applications through revolutionary <br> catalysts for chang the Seamlessly <br> underwhelm dures.</div>
+                        <div class="descr">Business applications through revolutionary <br> catalysts for chang the
+                            Seamlessly <br> underwhelm dures.</div>
                         <div class="learn_button">
                             <button>Learn More</button>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -214,7 +234,8 @@
                                 </h1>
                             </div>
                             <div class="top_descr">
-                                Distinctively exploit optimal alignments for intuitive bandwidth. Quickly coordinate e-business applications through revolutionary.
+                                Distinctively exploit optimal alignments for intuitive bandwidth. Quickly coordinate
+                                e-business applications through revolutionary.
                             </div>
                             <div class="why_seo_examples_blocks">
                                 <div class="why_seo_examples_blocks_elements">
@@ -223,7 +244,8 @@
                                     </div>
                                     <div class="right">
                                         <div class="title">Social Media Marketing</div>
-                                        <div class="descr">Business applications through revolutionary catalysts <br> for chang the Seamlessly underwhelm dures.</div>
+                                        <div class="descr">Business applications through revolutionary catalysts <br>
+                                            for chang the Seamlessly underwhelm dures.</div>
                                     </div>
                                 </div>
                                 <div class="why_seo_examples_blocks_elements">
@@ -232,7 +254,8 @@
                                     </div>
                                     <div class="right">
                                         <div class="title">Email Marketing</div>
-                                        <div class="descr">Business applications through revolutionary catalysts <br> for chang the Seamlessly underwhelm dures.</div>
+                                        <div class="descr">Business applications through revolutionary catalysts <br>
+                                            for chang the Seamlessly underwhelm dures.</div>
                                     </div>
                                 </div>
                                 <div class="why_seo_examples_blocks_elements">
@@ -241,7 +264,8 @@
                                     </div>
                                     <div class="right">
                                         <div class="title">SEO Optimization</div>
-                                        <div class="descr">Business applications through revolutionary catalysts <br> for chang the Seamlessly underwhelm dures.</div>
+                                        <div class="descr">Business applications through revolutionary catalysts <br>
+                                            for chang the Seamlessly underwhelm dures.</div>
                                     </div>
                                 </div>
                             </div>
@@ -290,21 +314,22 @@
                 <div class="container">
                     <div class="mail_box_section_content">
                         <!-- <div class="mail_box_section_content_right"> -->
-                            <div class="title">
-                                <h1>
-                                    Check Your Website Speed
-                                </h1>
-                            </div>
-                            <div class="descr">
-                                Distinctively exploit optimal alignments for intuitive bandwidth. <br> Quickly coordinate e-business applications through revolutionary.
-                            </div>
-                            <div class="mail_box_form">
-                                <form action="" class="mail_box_form_elem">
-                                    <input type="url" placeholder="Web URL">
-                                    <input type="email" placeholder="Email Adress">
-                                    <button>Submit</button>
-                                </form>
-                            </div>
+                        <div class="title">
+                            <h1>
+                                Check Your Website Speed
+                            </h1>
+                        </div>
+                        <div class="descr">
+                            Distinctively exploit optimal alignments for intuitive bandwidth. <br> Quickly coordinate
+                            e-business applications through revolutionary.
+                        </div>
+                        <div class="mail_box_form">
+                            <form action="" class="mail_box_form_elem">
+                                <input type="url" placeholder="Web URL">
+                                <input type="email" placeholder="Email Adress">
+                                <button>Submit</button>
+                            </form>
+                        </div>
                         <!-- </div> -->
                     </div>
                 </div>
@@ -325,7 +350,8 @@
                     <div class="plans_block">
                         <p class="title">Plus</p>
                         <p class="cost"><span>30</span>/mounth</p>
-                        <p class="descr">50GB Bandwidth <br> Business & Financ Analysing <br> 24 Hour Support <br> Customer Managemet</p>
+                        <p class="descr">50GB Bandwidth <br> Business & Financ Analysing <br> 24 Hour Support <br>
+                            Customer Managemet</p>
                         <div class="plans_button">
                             <button>Get Started</button>
                         </div>
@@ -334,7 +360,8 @@
                         <p class="title">Beginer</p>
                         <p class="cost">
                             <span>55</span>/mounth</p>
-                        <p class="descr">50GB Bandwidth <br> Business & Financ Analysing <br> 24 Hour Support <br> Customer Managemet</p>
+                        <p class="descr">50GB Bandwidth <br> Business & Financ Analysing <br> 24 Hour Support <br>
+                            Customer Managemet</p>
                         <div class="plans_button">
                             <button>Get Started</button>
                         </div>
@@ -343,7 +370,8 @@
                         <p class="title">Advanced</p>
                         <p class="cost">
                             <span>129</span>/mounth</p>
-                        <p class="descr">50GB Bandwidth <br> Business & Financ Analysing <br> 24 Hour Support <br> Customer Managemet</p>
+                        <p class="descr">50GB Bandwidth <br> Business & Financ Analysing <br> 24 Hour Support <br>
+                            Customer Managemet</p>
                         <div class="plans_button">
                             <button>Get Started</button>
                         </div>
@@ -357,7 +385,8 @@
             <div class="team_title">
                 <p>Our Expert Team Members</p>
             </div>
-            <div class="team_descr">This new-found knowledge may then be used by engineers to <br> create new tools and machines.</div>
+            <div class="team_descr">This new-found knowledge may then be used by engineers to <br> create new tools and
+                machines.</div>
             <div class="container">
                 <div class="team_section_content">
                     <div class="team_block">
@@ -411,7 +440,8 @@
 
         <section class="blog_section">
             <div class="blog_title">Our Latest News</div>
-            <div class="blog_descr">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia <br> urae Suspendisse ante arcu, consectetur id nisl eget.</div>
+            <div class="blog_descr">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                <br> urae Suspendisse ante arcu, consectetur id nisl eget.</div>
             <div class="blog_section_conten slider-two">
                 <div class="blog_block slider__item">
                     <div class="blog_block_content">
@@ -435,7 +465,8 @@
                                 </div>
                             </div>
                             <div class="text">
-                                On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure.
+                                On the other hand, we denounce with righteous indignation and dislike men who are so
+                                beguiled and demoralized by the charms of pleasure.
                             </div>
                             <div class="button">Read More...</div>
                         </div>
@@ -463,7 +494,8 @@
                                 </div>
                             </div>
                             <div class="text">
-                                On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure.
+                                On the other hand, we denounce with righteous indignation and dislike men who are so
+                                beguiled and demoralized by the charms of pleasure.
                             </div>
                             <div class="button">Read More...</div>
                         </div>
@@ -491,7 +523,8 @@
                                 </div>
                             </div>
                             <div class="text">
-                                On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure.
+                                On the other hand, we denounce with righteous indignation and dislike men who are so
+                                beguiled and demoralized by the charms of pleasure.
                             </div>
                             <div class="button">Read More...</div>
                         </div>
@@ -519,7 +552,8 @@
                                 </div>
                             </div>
                             <div class="text">
-                                On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure.
+                                On the other hand, we denounce with righteous indignation and dislike men who are so
+                                beguiled and demoralized by the charms of pleasure.
                             </div>
                             <div class="button">Read More...</div>
                         </div>
@@ -541,7 +575,8 @@
                                 </div>
                             </a>
                         </div>
-                        <p>Distinctively exploit optimal alignments for intuitive bandwidth. Quickly coordinate business through revolutionary.</p>
+                        <p>Distinctively exploit optimal alignments for intuitive bandwidth. Quickly coordinate business
+                            through revolutionary.</p>
                         <div class="social_icons">
                             <img src="img/facebook-footer.png" alt="">
                             <img src="img/twitter-footer.png" alt="">
@@ -550,7 +585,9 @@
                         </div>
                     </div>
                     <div class="second footer__block">
-                        <div class="title"><h1>Our Company</h1></div>
+                        <div class="title">
+                            <h1>Our Company</h1>
+                        </div>
                         <ul>
                             <li><span>About Us</span></li>
                             <li><span>Our Services</span></li>
@@ -560,7 +597,9 @@
                         </ul>
                     </div>
                     <div class="third footer__block">
-                        <div class="title"><h1>Our Services</h1></div>
+                        <div class="title">
+                            <h1>Our Services</h1>
+                        </div>
                         <ul>
                             <li><span>Digital Marketing</span></li>
                             <li><span>SEO Optimazation</span></li>
@@ -570,7 +609,9 @@
                         </ul>
                     </div>
                     <div class="fourth footer__block">
-                        <div class="title"><h1>Contact Us</h1></div>
+                        <div class="title">
+                            <h1>Contact Us</h1>
+                        </div>
                         <div class="location">
                             <span><b>Location:</b> 1370 Orvilly Rot APT, New York, USA</span>
                         </div>
@@ -591,8 +632,10 @@
         </footer>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+        </script>
+        <script src="js/script.js"></script>
 </body>
+
 </html>
