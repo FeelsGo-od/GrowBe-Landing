@@ -1844,14 +1844,17 @@ footer .bottom .rights p {
   }
   .why_seo_examples_blocks {
     padding: 14px 0px 0px 0px;
-    margin-top: -10px;
+    margin-top: -7px;
+  }
+  .plans_section_content .plans_block:nth-child(1) {
+    margin-top: 28px;
   }
   .why_seo_examples_blocks_elements {
     flex-direction: column;
     padding-left: 0px;
     padding-top: 28px;
     position: relative;
-    left: -2px;
+    left: -7.8px;
   }
   .why_seo_examples_blocks_elements img {
     width: 30px;
@@ -1891,7 +1894,7 @@ footer .bottom .rights p {
     color: #000;
     border-radius: 10px;
     margin-top: 13px;
-    line-height: 21px;
+    line-height: 26px;
     padding-bottom: 61px;
     width: 88%;
     margin: 0 auto;
@@ -1959,15 +1962,17 @@ footer .bottom .rights p {
   }
   .plans_section {
     padding-bottom: 98px;
+    padding-top: 41px;
   }
   .plans_section_content .plans_block .title {
-    font-size: 19px;
+    font-size: 31px;
+    margin-top: -6px;
   }
   .plans_section_content .plans_block .descr {
     font-size: 10px;
   }
   .plans_section_content .plans_block .cost {
-    font-size: 9px;
+    font-size: 16.4px;
   }
   .plans_section_content .plans_block .cost span {
     font-size: 28px;
