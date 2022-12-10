@@ -1392,6 +1392,12 @@ footer .bottom .rights p {
   }
 }
 
+@media (min-width: 992px) {
+  footer .top .second {
+    margin-left: 102px;
+  }
+}
+
 /* media 992px - 1199px */
 @media (min-width: 992px) and (max-width: 1199px) {
   header,
@@ -1485,9 +1491,6 @@ footer .bottom .rights p {
   footer .top {
     width: 90%;
     margin: 0 auto;
-  }
-  footer .top .second {
-    margin-left: 102px;
   }
   section.features_section .features_section_content {
     padding: 100px 0px 100px 32px;
