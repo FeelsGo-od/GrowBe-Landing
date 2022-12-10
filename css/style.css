@@ -1767,6 +1767,8 @@ footer .bottom .rights p {
     border-left: none;
     border-right: none;
     box-sizing: border-box;
+    position: relative;
+    left: -5px;
   }
   .features_block:nth-child(2) {
     margin-left: 0px;
@@ -1854,7 +1856,7 @@ footer .bottom .rights p {
     padding-left: 0px;
     padding-top: 28px;
     position: relative;
-    left: -7.8px;
+    left: -9.1px;
   }
   .why_seo_examples_blocks_elements img {
     width: 30px;
@@ -1894,12 +1896,12 @@ footer .bottom .rights p {
     color: #000;
     border-radius: 10px;
     margin-top: 13px;
-    line-height: 26px;
+    line-height: 31px;
     padding-bottom: 61px;
-    width: 88%;
+    width: 99%;
     margin: 0 auto;
     text-align: left;
-    padding-top: 23px;
+    padding-top: 32px;
     letter-spacing: 0.3px;
   }
   .fact_section {
@@ -1973,6 +1975,7 @@ footer .bottom .rights p {
   }
   .plans_section_content .plans_block .cost {
     font-size: 16.4px;
+    margin-top: 11px;
   }
   .plans_section_content .plans_block .cost span {
     font-size: 28px;
@@ -2307,7 +2310,7 @@ footer .bottom .rights p {
     width: 32%;
   }
   .blog_block_content .content {
-    margin-left: -7px;
+    margin-left: -9px;
   }
   .slider-two .slick-dots {
     padding-bottom: 82px;
