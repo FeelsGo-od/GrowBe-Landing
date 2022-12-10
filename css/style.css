@@ -1991,6 +1991,10 @@ footer .bottom .rights p {
     padding-top: 23px;
     font-size: 36px;
   }
+  .team_title p {
+    width: 90%;
+    margin: 0 auto;
+  }
   .team_section_content {
     flex-direction: column;
     padding-bottom: 26px;
