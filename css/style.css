@@ -265,6 +265,7 @@ section.main_section .main_section_content .buttons .watch_button button {
   margin-left: 16px;
   letter-spacing: 0.4px;
   cursor: pointer;
+  color: black;
 }
 section.main_section .main_section_content .buttons .start_button button {
   width: 140px;
@@ -414,6 +415,7 @@ section.features_section .features_section_content .features_block:hover {
   font-weight: bold;
   font-size: 11px;
   cursor: pointer;
+  color: black;
 }
 .features_block:nth-child(3) img {
   padding-left: 16px;
@@ -2130,11 +2132,11 @@ footer .bottom .rights p {
   footer .top .second ul {
     list-style: none;
     position: relative;
-    left: -8px;
+    left: -9px;
   }
   footer .top .third ul {
     position: relative;
-    left: -5px;
+    left: -7px;
   }
   footer .top .third li {
     list-style: none;
@@ -2194,10 +2196,15 @@ footer .bottom .rights p {
     line-height: 53px;
   }
   .why_seo_section_content_right .top_descr {
-    font-size: 11px;
+    font-size: 14.5px;
+    padding-bottom: 41px;
   }
   .why_seo_examples_blocks_elements .right .descr {
-    font-size: 12px;
+    font-size: 16px;
+    margin-top: 3px;
+  }
+  .why_seo_examples_blocks_elements:hover, .why_seo_examples_blocks_elements:nth-child(3):hover {
+    box-shadow: none;
   }
   .why_seo_section_content_right {
     width: 81%;
@@ -2264,6 +2271,7 @@ footer .bottom .rights p {
   .plans_section_content .plans_block .descr {
     font-size: 22px;
     line-height: 163%;
+    margin-top: 17px;
   }
   .plans_section_content .plans_block.different {
     margin-top: 7px;
@@ -2294,7 +2302,7 @@ footer .bottom .rights p {
     width: 32%;
   }
   .blog_block_content .content {
-    margin-left: 1px;
+    margin-left: -7px;
   }
   .slider-two .slick-dots {
     padding-bottom: 82px;
